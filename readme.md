@@ -54,11 +54,11 @@
 
 ```mermaid
 flowchart TD
-   participant A[Untracked] -- git add --> B[stage + tracked]
-   participant C[Modified] -- git add --> B
-   B -- changes --> C[Modified]
-   B -- git commit --> D[tracked]
-   D -- changes --> C[Modified]
+   participant Untracked -- git add --> stage + tracked
+   participant Modified -- git add --> stage + tracked
+   stage + tracked -- changes --> Modified
+   stage + tracked -- git commit --> tracked
+   tracked -- changes --> Modified
 ```
 
 # Вуаля, вы восхитительны! 
