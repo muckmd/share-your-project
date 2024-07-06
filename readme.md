@@ -54,10 +54,10 @@
 
 ```mermaid
 flowchart TD
-   Untracked -- git add --> stage and tracked;
-   Modified -- git add --> stage and tracked;
-   stage and tracked -- changes --> Modified;
-   stage and tracked -- git commit --> tracked;
+   Untracked -- git add --> stagetracked;
+   Modified -- git add --> stagetracked;
+   stagetracked -- changes --> Modified;
+   stagetracked -- git commit --> tracked;
    tracked -- changes --> Modified;
 ```
 
